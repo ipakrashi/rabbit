@@ -4,8 +4,16 @@ import {
     HiOutlineUser,
 } from 'react-icons/hi2'
 import { Link } from 'react-router-dom'
+import SearchBar from './SearchBar'
+import CartDrawer from '../layout/CartDrawer'
+import { useState } from 'react'
 
 const Navbar = () => {
+    const [drawerOpen, setDrawerOpen] = useState(false)
+
+    const toggleCartDrawer = () => {
+        setDrawerOpen(!drawerOpen)
+    }
     return (
         <>
             <nav className='container mx-auto flex items-center justify-between py-4 px-6'>
@@ -47,18 +55,26 @@ const Navbar = () => {
                     <Link to='/profile' className='hover:text-black'>
                         <HiOutlineUser className='h-6 w-6 text-gray-700' />
                     </Link>
-                    <button className='relative hover:text-black'>
+                    <button
+                        className='relative hover:text-black'
+                        onClick={toggleCartDrawer}
+                    >
                         <HiOutlineShoppingBag className='h-6 w-6 text-gray-700 cursor-pointer' />
                         <span className='absolute bg-rabbit-red text-white text-xs rounded-full px-2 py-0.5 -top-3'>
                             4
                         </span>
                     </button>
                     {/* Search  */}
+                    <SearchBar />
                     <button className='md:hidden'>
                         <HiBars3BottomRight className=' text-gray-700 h-6 w-6' />
                     </button>
                 </div>
             </nav>
+            <CartDrawer
+                drawerOpen={drawerOpen}
+                toggleCartDrawer={toggleCartDrawer}
+            />
         </>
     )
 }
