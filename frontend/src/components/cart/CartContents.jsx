@@ -28,7 +28,7 @@ const CartContents = () => {
                     className='flex items-start py-4 border-b gap-1'
                     key={index}
                 >
-                    <div className='flex items-center justify-between'>
+                    <div className='flex items-center justify-start'>
                         <img
                             src={product.image}
                             alt={product.name}
@@ -58,7 +58,7 @@ const CartContents = () => {
                             </button>
                         </div>
                     </div>
-                    <div className='ml-3'>
+                    <div className='ml-25'>
                         <p>$:{product.price.toLocaleString()}</p>
                         <button>
                             <RiDeleteBin3Line className='h-6 w-6 mt-1 text-red-600' />
