@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { toast } from 'sonner'
 
 const selectedProduct = {
     name: 'Stylish Jacket',
@@ -35,6 +36,21 @@ const ProductDetails = () => {
             setMainImage(selectedProduct.images[0].url)
         }
     }, [selectedProduct])
+
+    const handleAddToCart = () => {
+        if (!selectedSize || !selectedColor) {
+            toast.error('Please select Size & Color before adding to cart', {
+                duration: 3000,
+            })
+            return
+        }
+        setIsButtonDisabled(true)
+        // Fix: Keep button disabled until timeout completes
+        setTimeout(() => {
+            toast.success('Product added to cart', { duration: 3000 })
+            setIsButtonDisabled(false) // Re-enable inside the timer callback
+        }, 1000)
+    }
 
     return (
         <div className='p-6'>
@@ -100,7 +116,6 @@ const ProductDetails = () => {
                                         style={{
                                             backgroundColor:
                                                 color.toLocaleLowerCase(),
-                                            filter: 'brightness(0.5)',
                                         }}
                                         onClick={() => setSelectedColor(color)}
                                     ></button>
@@ -151,8 +166,12 @@ const ProductDetails = () => {
                                 </button>
                             </div>
                         </div>
-                        <button className='bg-black text-white py-2 px-6 rounded-lg w-full mb-4'>
-                            Add to Cart
+                        <button
+                            className={`bg-black text-white py-2 px-6 rounded-lg w-full mb-4 ${isButtonDisabled ? 'cursor-not-allowed opacity-50' : 'hover:bg-gray-900'}`}
+                            onClick={handleAddToCart}
+                            disabled={isButtonDisabled}
+                        >
+                            {isButtonDisabled ? 'Adding......' : 'Add to Cart'}
                         </button>
                         <div className='mt-10 text-gray-700'>
                             <h3 className='text-xl font-bold mb-4'>
