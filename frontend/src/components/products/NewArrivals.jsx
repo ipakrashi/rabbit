@@ -8,7 +8,6 @@ const NewArrivals = () => {
     const [canScrollRight, setCanScrollRight] = useState(true)
     const [canScrollLeft, setCanScrollLeft] = useState(false)
     const [startX, setStartX] = useState(0)
-    const [pageX, setPageX] = useState(0)
     const [scrollLeft, setScrollLeft] = useState(0)
 
     const newArrivals = [
