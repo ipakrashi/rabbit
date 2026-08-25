@@ -13,7 +13,7 @@ const Hero = () => {
                     <h1 className='text-4xl md:text-9xl font-bold tracking-tighter uppercase mb-4'>
                         Vacation <br /> Ready
                     </h1>
-                    <p className='text-sm tracking-tighter md:text-lg mb-6'>
+                    <p className='text-md tracking-tighter md:text-3xl mb-6'>
                         Explore our vacation-ready outfits with fast worldwide
                         shipping
                     </p>
