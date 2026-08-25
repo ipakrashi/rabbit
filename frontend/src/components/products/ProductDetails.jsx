@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react'
+
 const selectedProduct = {
     name: 'Stylish Jacket',
     price: 150,
@@ -20,6 +22,20 @@ const selectedProduct = {
     ],
 }
 const ProductDetails = () => {
+    const [mainImage, setMainImage] = useState(
+        selectedProduct?.images?.[0]?.url || '',
+    )
+    const [selectedSize, setSelectedSize] = useState('')
+    const [selectedColor, setSelectedColor] = useState('')
+    const [quantity, setQuantity] = useState(1)
+    const [isButtonDisabled, setIsButtonDisabled] = useState(false)
+
+    useEffect(() => {
+        if (selectedProduct.images.length > 0) {
+            setMainImage(selectedProduct.images[0].url)
+        }
+    }, [selectedProduct])
+
     return (
         <div className='p-6'>
             <div className='max-w-6xl mx-auto bg-white p-8 rounded-lg'>
@@ -31,7 +47,8 @@ const ProductDetails = () => {
                                 src={image.url}
                                 alt={image.altText || `Thumbnail ${index}`}
                                 key={index}
-                                className='h-20 w-20 object-cover border rounded-lg cursor-pointer'
+                                className={`h-20 w-20 object-cover border rounded-lg cursor-pointer ${mainImage === image.url ? 'border-black border-3' : 'border-gray-300'}`}
+                                onClick={() => setMainImage(image.url)}
                             />
                         ))}
                     </div>
@@ -39,7 +56,7 @@ const ProductDetails = () => {
                     <div className='md:w-1/2'>
                         <div className='mb-4'>
                             <img
-                                src={selectedProduct.images[0]?.url}
+                                src={mainImage}
                                 alt='Main product'
                                 className='w-full h-auto object-cover rounded-lg'
                             />
@@ -53,7 +70,8 @@ const ProductDetails = () => {
                                 src={image.url}
                                 alt={image.altText || `Thumbnail ${index}`}
                                 key={index}
-                                className='h-20 w-20 object-cover border rounded-lg cursor-pointer'
+                                className={`h-20 w-20 object-cover border rounded-lg cursor-pointer ${mainImage === image.url ? 'border-black border-3' : 'border-gray-300'}`}
+                                onClick={() => setMainImage(image.url)}
                             />
                         ))}
                     </div>
@@ -78,12 +96,13 @@ const ProductDetails = () => {
                                 {selectedProduct.colors.map((color) => (
                                     <button
                                         key={color}
-                                        className='w-8 h-8 rounded-full border'
+                                        className={`w-8 h-8 rounded-full border ${selectedColor === color ? 'border-4 border-black' : 'border-gray-300'}`}
                                         style={{
                                             backgroundColor:
                                                 color.toLocaleLowerCase(),
                                             filter: 'brightness(0.5)',
                                         }}
+                                        onClick={() => setSelectedColor(color)}
                                     ></button>
                                 ))}
                             </div>
@@ -94,7 +113,8 @@ const ProductDetails = () => {
                                 {selectedProduct.sizes.map((size) => (
                                     <button
                                         key={size}
-                                        className='px-4 py-2 rounded border'
+                                        className={`px-4 py-2 rounded border ${selectedSize === size ? 'border-4 border-black text-white bg-black' : 'border-gray-300'}`}
+                                        onClick={() => setSelectedSize(size)}
                                     >
                                         {size}
                                     </button>
@@ -104,11 +124,29 @@ const ProductDetails = () => {
                         <div className='mb-6 '>
                             <p className='text-gray-700'>Quantity:</p>
                             <div className='flex items-center space-x-4 mt-2'>
-                                <button className='px-2 py-1 bg-gray-200 rounded text-lg'>
+                                <button
+                                    className='px-2 py-1 bg-gray-200 rounded text-lg'
+                                    onClick={() => {
+                                        if (quantity > 1) {
+                                            setQuantity((prev) => prev - 1)
+                                        } else {
+                                            setQuantity(1)
+                                        }
+                                    }}
+                                >
                                     -
                                 </button>
-                                <span className='text-lg'>1</span>
-                                <button className='px-2 py-1 bg-gray-200 rounded text-lg'>
+                                <span className='text-lg'>{quantity}</span>
+                                <button
+                                    className='px-2 py-1 bg-gray-200 rounded text-lg'
+                                    onClick={() => {
+                                        if (quantity >= 1) {
+                                            setQuantity((prev) => prev + 1)
+                                        } else {
+                                            setQuantity(1)
+                                        }
+                                    }}
+                                >
                                     +
                                 </button>
                             </div>
