@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-function GenderCollecionSection() {
+function GenderCollectionSection() {
     return (
         <section className='py-16 px-4 lg:px-8'>
             <div className='@container mx-auto flex flex-col md:flex-row gap-8'>
@@ -47,4 +47,4 @@ function GenderCollecionSection() {
     )
 }
 
-export default GenderCollecionSection
+export default GenderCollectionSection
