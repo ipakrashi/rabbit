@@ -1,4 +1,6 @@
+import FeaturesSection from '../components/common/FeaturesSection'
 import Hero from '../components/layout/Hero'
+import FeaturedCollection from '../components/products/FeaturedCollection'
 import GenderCollectionSection from '../components/products/GenderCollectionSection'
 import NewArrivals from '../components/products/NewArrivals'
 import ProductDetails from '../components/products/ProductDetails'
@@ -110,6 +112,8 @@ const Home = () => {
                 </h2>
                 <ProductGrid similarProducts={topWearsForWomen} />
             </div>
+            <FeaturedCollection />
+            <FeaturesSection />
         </div>
     )
 }
