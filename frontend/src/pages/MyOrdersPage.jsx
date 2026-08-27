@@ -30,8 +30,8 @@ const MyOrdersPage = () => {
                             image: 'https://picsum.photos/500/500/?ramdom34',
                         },
                     ],
-                    totalPrice: 100,
-                    isPaid: true,
+                    totalPrice: 300,
+                    isPaid: false,
                 },
             ]
             setOrders(mockOrders)
@@ -56,6 +56,55 @@ const MyOrdersPage = () => {
                             <th className='py-2 px-4 sm:py-3'>Status</th>
                         </tr>
                     </thead>
+                    <tbody>
+                        {orders.length > 0
+                            ? orders.map((order) => (
+                                  <tr
+                                      key='order._id'
+                                      className='border-b :hover border-gray-50 cursor-pointer'
+                                  >
+                                      <td className='p-2 sm:p-4'>
+                                          <img
+                                              src={order.orderItems[0].image}
+                                              alt='OI'
+                                              className='w-10 h-10 sm:h-12 w-12 rounded-lg'
+                                          />
+                                      </td>
+                                      <td className='p-2 sm:p-4 font-medium text-gray-900 whitespace-nowrap'>
+                                          # {order._id}
+                                      </td>
+                                      <td className='p-2 sm:p-4 font-medium text-gray-900 whitespace-nowrap'>
+                                          {new Date(
+                                              order.createdAt,
+                                          ).toLocaleDateString()}{' '}
+                                          {new Date(
+                                              order.createdAt,
+                                          ).toLocaleTimeString()}
+                                      </td>
+                                      <td className='p-2 sm:p-4 font-medium text-gray-900 whitespace-nowrap'>
+                                          {order.shippingAddress
+                                              ? `${order.shippingAddress.city} - ${order.shippingAddress.country}`
+                                              : 'N/A'}
+                                      </td>
+                                      <td className='p-2 sm:p-4 font-medium text-gray-900 whitespace-nowrap'>
+                                          {order.orderItems.length}
+                                      </td>
+                                      <td className='p-2 sm:p-4 font-medium text-gray-900 whitespace-nowrap'>
+                                          $ {order.totalPrice}
+                                      </td>
+                                      <td className='p-2 sm:p-4 font-medium text-gray-900 whitespace-nowrap'>
+                                          <span
+                                              className={`px-2 py-1 rounded-lg font-medium  ${order.isPaid ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}
+                                          >
+                                              {order.isPaid
+                                                  ? 'Paid'
+                                                  : 'Pending'}
+                                          </span>
+                                      </td>
+                                  </tr>
+                              ))
+                            : null}
+                    </tbody>
                 </table>
             </div>
         </div>
