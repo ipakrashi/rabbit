@@ -103,6 +103,18 @@ const FilterSidebar = () => {
         navigate(`?${params.toString()}`)
     }
 
+    const handlePriceChange = (e) => {
+        const maxVal = Number(e.target.value)
+        setPriceRange([priceRange[0], maxVal])
+        const newFilters = {
+            ...filters,
+            minPrice: priceRange[0],
+            maxPrice: maxVal,
+        }
+        setFilters(newFilters)
+        updateUrlParams(newFilters)
+    }
+
     return (
         <div className='p-4'>
             <div className='text-xl font-medium text-gray-800 mb-4'>
@@ -277,11 +289,12 @@ const FilterSidebar = () => {
                     </label>
                     <input
                         type='range'
-                        name='priceRange'
+                        name='maxPrice'
                         id=''
                         min={0}
                         max={200}
                         value={priceRange[1]}
+                        onChange={handlePriceChange}
                         className='w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer'
                     />
                     <div className='justify-between text-gray-600 flex mt-2'>
