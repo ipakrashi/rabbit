@@ -51,7 +51,10 @@ const Checkout = () => {
     const handleCreateCheckout = (e) => {
         e.preventDefault()
         setCheckoutId(123)
-        alert('Checking Out...')
+    }
+
+    const displayOrderConfirmation = () => {
+        navigate('/order-confirmation')
     }
 
     return (
@@ -194,6 +197,12 @@ const Checkout = () => {
                                     Pay With Paypal
                                 </h3>
                                 {/* Paypal Component */}
+                                <button
+                                    onClick={displayOrderConfirmation}
+                                    className='bg-black text-white font-semibold rounded-lg p-2'
+                                >
+                                    Order Confirmation
+                                </button>
                             </div>
                         )}
                     </div>
