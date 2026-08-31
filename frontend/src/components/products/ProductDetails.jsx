@@ -14,11 +14,11 @@ const selectedProduct = {
     colors: ['Red', 'Black', '#13ed32'],
     images: [
         {
-            url: 'https://picsum.photos/300/300?random=1',
+            url: 'https://images.unsplash.com/photo-1636576506457-e22157f737e3?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             altText: 'SJ1',
         },
         {
-            url: 'https://picsum.photos/300/300?random=2',
+            url: 'https://images.unsplash.com/photo-1636576511559-7a9d743b8d35?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             altText: 'SJ2',
         },
     ],
@@ -31,7 +31,7 @@ const similarProducts = [
         price: 130,
         images: [
             {
-                url: 'https://picsum.photos/300/300?random=10',
+                url: 'https://images.unsplash.com/photo-1592423777039-7be9f340582b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                 altText: 'SJ1',
             },
         ],
@@ -42,7 +42,7 @@ const similarProducts = [
         price: 130,
         images: [
             {
-                url: 'https://picsum.photos/300/300?random=11',
+                url: 'https://images.unsplash.com/photo-1592423788390-2e71e064f724?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                 altText: 'SJ1',
             },
         ],
@@ -53,7 +53,7 @@ const similarProducts = [
         price: 130,
         images: [
             {
-                url: 'https://picsum.photos/300/300?random=12',
+                url: 'https://images.unsplash.com/photo-1649546786116-c10c6d4be27e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                 altText: 'SJ1',
             },
         ],
@@ -64,7 +64,7 @@ const similarProducts = [
         price: 130,
         images: [
             {
-                url: 'https://picsum.photos/300/300?random=13',
+                url: 'https://images.unsplash.com/photo-1785571490245-67577fcbd9d7?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                 altText: 'SJ1',
             },
         ],

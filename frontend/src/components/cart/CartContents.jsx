@@ -9,7 +9,7 @@ const CartContents = () => {
             color: 'Red',
             quantity: 1,
             price: 15,
-            image: 'https://picsum.photos/200?random=1',
+            image: 'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         },
         {
             productId: 2,
@@ -18,7 +18,7 @@ const CartContents = () => {
             color: 'Blue',
             quantity: 1,
             price: 15,
-            image: 'https://picsum.photos/200?random=2',
+            image: 'https://images.unsplash.com/photo-1602293589930-45aad59ba3ab?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         },
     ]
     return (

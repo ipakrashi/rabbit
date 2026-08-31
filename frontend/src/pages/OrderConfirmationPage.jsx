@@ -11,7 +11,7 @@ const checkout = {
             size: 'M',
             price: 150,
             quantity: 1,
-            image: 'https://picsum.photos/300?random=54',
+            image: 'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         },
         {
             productId: 2,
@@ -20,7 +20,7 @@ const checkout = {
             size: 'XL',
             price: 250,
             quantity: 1,
-            image: 'https://picsum.photos/300?random=55',
+            image: 'https://images.unsplash.com/photo-1602293589930-45aad59ba3ab?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         },
     ],
     shippingAddress: {

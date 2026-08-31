@@ -35,7 +35,7 @@ const CollectionPage = () => {
                     price: 29.99,
                     images: [
                         {
-                            url: 'https://picsum.photos/300/300?random=10',
+                            url: 'https://images.unsplash.com/photo-1760552069745-86dfb3013f08?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                             altText: 'Shirt',
                         },
                     ],
@@ -46,7 +46,7 @@ const CollectionPage = () => {
                     price: 55,
                     images: [
                         {
-                            url: 'https://picsum.photos/300/300?random=11',
+                            url: 'https://images.unsplash.com/photo-1605108083603-85696109df99?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                             altText: 'Pants',
                         },
                     ],
@@ -57,7 +57,7 @@ const CollectionPage = () => {
                     price: 50,
                     images: [
                         {
-                            url: 'https://picsum.photos/300/300?random=12',
+                            url: 'https://images.unsplash.com/photo-1685538759029-64900f1306d5?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                             altText: 'Cargo',
                         },
                     ],
@@ -68,7 +68,7 @@ const CollectionPage = () => {
                     price: 27.99,
                     images: [
                         {
-                            url: 'https://picsum.photos/300/300?random=13',
+                            url: 'https://images.unsplash.com/photo-1659658380078-f9574d2cf7c0?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                             altText: 'Tee',
                         },
                     ],
@@ -79,7 +79,7 @@ const CollectionPage = () => {
                     price: 29.99,
                     images: [
                         {
-                            url: 'https://picsum.photos/300/300?random=14',
+                            url: 'https://plus.unsplash.com/premium_photo-1681493917930-829e1b41add0?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                             altText: 'Shirt',
                         },
                     ],
@@ -90,7 +90,7 @@ const CollectionPage = () => {
                     price: 55,
                     images: [
                         {
-                            url: 'https://picsum.photos/300/300?random=15',
+                            url: 'https://images.unsplash.com/photo-1538329972958-465d6d2144ed?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                             altText: 'Pants',
                         },
                     ],
@@ -101,7 +101,7 @@ const CollectionPage = () => {
                     price: 50,
                     images: [
                         {
-                            url: 'https://picsum.photos/300/300?random=16',
+                            url: 'https://images.unsplash.com/photo-1631902143354-17e7031c7422?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                             altText: 'Cargo',
                         },
                     ],
@@ -112,7 +112,7 @@ const CollectionPage = () => {
                     price: 27.99,
                     images: [
                         {
-                            url: 'https://picsum.photos/300/300?random=17',
+                            url: 'https://images.unsplash.com/photo-1650559117747-6dd115383cb7?q=80&w=701&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                             altText: 'Tee',
                         },
                     ],
@@ -123,7 +123,7 @@ const CollectionPage = () => {
                     price: 29.99,
                     images: [
                         {
-                            url: 'https://picsum.photos/300/300?random=18',
+                            url: 'https://images.unsplash.com/photo-1673610179315-1742de1d5519?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                             altText: 'Shirt',
                         },
                     ],
@@ -134,7 +134,7 @@ const CollectionPage = () => {
                     price: 55,
                     images: [
                         {
-                            url: 'https://picsum.photos/300/300?random=19',
+                            url: 'https://images.unsplash.com/photo-1713480957397-1327f65acacb?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                             altText: 'Pants',
                         },
                     ],
@@ -145,7 +145,7 @@ const CollectionPage = () => {
                     price: 50,
                     images: [
                         {
-                            url: 'https://picsum.photos/300/300?random=20',
+                            url: 'https://plus.unsplash.com/premium_photo-1661436200971-0e3e0f2fc954?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                             altText: 'Cargo',
                         },
                     ],
@@ -156,7 +156,7 @@ const CollectionPage = () => {
                     price: 27.99,
                     images: [
                         {
-                            url: 'https://picsum.photos/300/300?random=21',
+                            url: 'https://images.unsplash.com/photo-1630211548581-dca6387ed74b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                             altText: 'Tee',
                         },
                     ],

@@ -17,7 +17,7 @@ const NewArrivals = () => {
             price: 120,
             images: [
                 {
-                    url: 'https://picsum.photos/300/300?random=1',
+                    url: 'https://plus.unsplash.com/premium_photo-1675186049366-64a655f8f537?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                     altText: 'Stylish Jacket',
                 },
             ],
@@ -28,7 +28,7 @@ const NewArrivals = () => {
             price: 120,
             images: [
                 {
-                    url: 'https://picsum.photos/300/300?random=2',
+                    url: 'https://plus.unsplash.com/premium_photo-1675186049409-f9f8f60ebb5e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                     altText: 'Stylish Jacket',
                 },
             ],
@@ -39,7 +39,7 @@ const NewArrivals = () => {
             price: 120,
             images: [
                 {
-                    url: 'https://picsum.photos/300/300?random=3',
+                    url: 'https://plus.unsplash.com/premium_photo-1675186049419-d48f4b28fe7c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                     altText: 'Stylish Jacket',
                 },
             ],
@@ -50,7 +50,7 @@ const NewArrivals = () => {
             price: 120,
             images: [
                 {
-                    url: 'https://picsum.photos/300/300?random=4',
+                    url: 'https://plus.unsplash.com/premium_photo-1783874830581-5cacaadcb83f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                     altText: 'Stylish Jacket',
                 },
             ],
@@ -61,7 +61,7 @@ const NewArrivals = () => {
             price: 120,
             images: [
                 {
-                    url: 'https://picsum.photos/300/300?random=5',
+                    url: 'https://images.unsplash.com/photo-1772833521764-e52d634d21ca?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                     altText: 'Stylish Jacket',
                 },
             ],
@@ -72,7 +72,7 @@ const NewArrivals = () => {
             price: 120,
             images: [
                 {
-                    url: 'https://picsum.photos/300/300?random=6',
+                    url: 'https://plus.unsplash.com/premium_photo-1758611683182-76b3f7d6da28?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                     altText: 'Stylish Jacket',
                 },
             ],
@@ -83,7 +83,7 @@ const NewArrivals = () => {
             price: 120,
             images: [
                 {
-                    url: 'https://picsum.photos/300/300?random=7',
+                    url: 'https://plus.unsplash.com/premium_photo-1764481902408-d61629d92445?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                     altText: 'Stylish Jacket',
                 },
             ],
@@ -94,7 +94,7 @@ const NewArrivals = () => {
             price: 120,
             images: [
                 {
-                    url: 'https://picsum.photos/300/300?random=8',
+                    url: 'https://plus.unsplash.com/premium_photo-1779489493105-f7bdc9bc3c7e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                     altText: 'Stylish Jacket',
                 },
             ],
